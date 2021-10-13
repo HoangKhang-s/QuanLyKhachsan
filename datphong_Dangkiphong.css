@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 500px;
+  height: 598px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.form input:not(#btn-luu) {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form #input-gioi-tinh, .form #input-nam-sinh {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+  outline: none;
+}
+input[name="input-ho-ten-khach-hang"], 
+input[name="input-que-quan"], 
+input[name="input-so-dien-thoai"], 
+input[name="input-cmnd"],
+input[name="input-tien-dat-truoc"] {
+  width: 450px;
+  margin-bottom: 15px;
+}
+input[type="date"] {
+  margin-bottom: 15px;
+  width: 200px;
+}
+input[name="input-tien-dat-truoc"] {
+  width: 360px;
+  text-align: right;
+}
+input[name="input-ghi-chu"] {
+  width: 450px;
+}
+select[name="input-gioi-tinh"], select[name="input-nam-sinh"] {
+  width: 150px;
+  margin-bottom: 15px;
+}
+label[name="label-gioi-tinh"], 
+label[name="label-nam-sinh"], 
+label[name="label-ngay-nhan-phong"],
+label[name="label-ngay-tra-phong"],
+label[name="label-tien-dat-truoc"] {
+  font-size: 13px;
+  color: #535c68;
+}
+label[name="label-nam-sinh"] {
+  margin-left: 120px;
+  margin-right: 67px;
+}
+label[name="label-tien-dat-truoc"] {
+  margin-right: 144px;
+}
+select[name="input-nam-sinh"] {
+  margin-left: 20px;
+}
+label[name="label-ngay-tra-phong"] {
+  margin-left: 113px;
+}
+input[name="input-ngay-tra-phong"] {
+  margin-left: 15px;
+}
+#btn-luu {
+  width: 80px;
+  height: 35px;
+  border: 1px solid #27ae60;
+  color: #27ae60;
+  font-size: 19px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 365px;
+  margin-top: 30px;
+  background: white;
+}
+#btn-luu:hover {
+  background: #27ae60;
+  color: white;
+  transition: 0.2s ease;
+}

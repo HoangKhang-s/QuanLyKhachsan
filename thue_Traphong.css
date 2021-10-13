@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1243px;
+  height: 663px;
+  font-family: sans-serif;
+  display: flex;
+}
+.header {
+  width: 260px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.logo {
+  width: 260px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.list {
+  width: 260px;
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  width: 260px;
+  font-size: 17px;
+  margin: 18px 0;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.list-item-content {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+.list-item-content:hover {
+  color: #2c3e50;
+  transition: 0.2s ease;
+}
+.list-item .selected {
+  text-decoration: none;
+  color: red;
+}
+.icon {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.container {
+  width: 1000px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+}
+.container .container-name {
+  width: 1000px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.container-name > div {
+  font-size: 20px;
+  margin: 21px 0 22px 90px;
+}
+.container .container-content {
+  width: 1000px;
+  height: 598px;
+  display: flex;
+}
+.container-content .content {
+  width: 614px;
+  height: 598px;
+  overflow: hidden;
+}
+.content .label {
+  width: 614px;
+  height: 48px;
+  display: flex;
+  font-size: 15px;
+}
+.label label {
+  width: 307px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label:hover {
+  background-color: #dfe6e9;
+  transition: 0.3s ease;
+}
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+.hightlight {
+  width: 307px;
+  height: 2px;
+  background-color: #0984e3;
+}
+#r1:checked ~ .hightlight {
+  margin-left: 0;
+  transition: 0.3s ease;
+}
+#r2:checked ~ .hightlight {
+  margin-left: 307px;
+  transition: 0.3s ease;
+}
+.line {
+  width: 614px;
+  height: 1px;
+  background-color: #b2bec3;
+}
+.slides {
+  width: 2456px;
+  height: 547px;
+  display: flex;
+  position: relative;
+}
+.slides .slide-1, .slides .slide-2 {
+  width: 614px;
+  min-height: 547px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#r1:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: 0;
+}
+#r2:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: -100%;
+}
+/* -------------------SLIDE 1------------------------------------------ */
+.box-phong {
+  width: 590px;
+  /* min-height: 100px; */
+  box-shadow: 0 1px 2px 1px #bdc3c7;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.box-phong-da-dat {
+  background-color: #7bed9f;
+}
+.box-phong .ten-phong {
+  width: 590px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  background: none;
+}
+.box-phong .noi-dung-phong {
+  width: 590px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.noi-dung-phong .trang-thai-phong {
+  width: 590px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.noi-dung-phong .trang-thai {
+  margin-left: 10px;
+}
+.trang-thai .icon {
+  font-size: 19px;
+}
+.noi-dung-phong .btn-nhan-phong, 
+.noi-dung-phong .btn-huy-dat-phong {
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+.noi-dung-phong .btn-nhan-phong {
+  margin-left: 228px;
+}
+.noi-dung-phong .btn-nhan-phong:hover,
+.noi-dung-phong .btn-huy-dat-phong:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s ease;
+}
+.noi-dung-phong .noi-dung-nguoi-dat {
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+}
+.box-ten-khach-hang, .box-thoi-gian-thue-phong, .box-so-dien-thoai {
+  width: 590px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.noi-dung-nguoi-dat .icon {
+  font-size: 17px;
+  margin-right: 10px;
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------------SLIDE 2--------------------------------- */
+.box-phong-thue {
+  width: 590px;
+  min-height: 100px;
+  box-shadow: 0 0 2px 2px #dcdde1;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.box-phong-thue .box-ten-phong-thue {
+  width: 590px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+.box-noi-dung-phong-thue {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slide-2 .box-thue-theo,
+.slide-2 .box-thoi-gian-thue-phong,
+.slide-2 .box-tien-dung-menu,
+.slide-2 .box-phong-du-tinh,
+.slide-2 .box-tien-tra-truoc,
+.slide-2 .box-tien-can-thanh-toan-du-tinh {
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.box-btn-doi-phong,
+.box-btn-them-menu,
+.box-btn-tra-phong {
+  width: 190px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 19px;
+}
+.btn {
+  width: 100px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+.btn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s ease;
+}
+/* ------------------------------------------------------------------------ */
+.box-form {
+  width: 386px;
+  height: 598px;
+  border-left: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}

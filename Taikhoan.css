@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 1243px;
+    height: 663px;
+    font-family: sans-serif;
+    display: flex;
+}
+.header {
+    width: 260px;
+    height: 663px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #bdc3c7;
+    box-sizing: border-box;
+}
+.logo {
+  width: 260px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.list {
+    width: 260px;
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.list-item {
+    width: 260px;
+    font-size: 17px;
+    margin: 18px 0;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+.list-item-content {
+    text-decoration: none;
+    color: #7f8c8d;
+}
+.list-item-content:hover {
+    color: #2c3e50;
+    transition: 0.2s ease;
+}
+.list-item .selected {
+    text-decoration: none;
+    color: red;
+}
+.icon {
+    font-size: 20px;
+    padding-right: 10px;
+}
+  
+  
+.container {
+    width: 1000px;
+    height: 663px;
+    display: flex;
+    flex-direction: column;
+}
+.container .container-name {
+    width: 1000px;
+    height: 65px;
+    border-bottom: 1px solid #bdc3c7;
+    box-sizing: border-box;
+}
+.container-name > div {
+    font-size: 20px;
+    margin: 21px 0 22px 90px;
+}
+.container-content {
+    width: 1000px;
+    height: 598px;
+    overflow: hidden;
+    position: relative;
+}
+.container-content .label {
+    width: 1000px;
+    height: 48px;
+    display: flex;
+}
+.container-content .label label[for="r1"] {
+    width: 213px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-content .label label[for="r2"] {
+    width: 175px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label[for="r1"]:hover, label[for="r2"]:hover {
+    background: #dfe6e9;
+    transition: 0.3s ease;
+}
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+.container-content .hightlight {
+    width: 213px;
+    height: 2px;
+    background-color: #2980b9;
+}
+#r1:checked ~ .hightlight {
+    margin-left: 0;
+    transition: 0.3s ease;
+}
+#r2:checked ~ .hightlight {
+    margin-left: 213px;
+    width: 175px;
+    transition: 0.3s ease;
+}
+.container-content .line {
+    width: 1000px;
+    height: 1px;
+    background-color: #bdc3c7;
+}
+.container-content .slides {
+    width: 2000px;
+    height: 547px;
+    display: flex;
+    position: absolute;
+}
+.container-content .slides .slide-1, .container-content .slides .slide-2 {
+    width: 1000px;
+    height: 547px;
+}
+#r1:checked ~ .hightlight ~ .line ~ .slides {
+    margin-left: 0;
+    transition: 0.3s ease;
+}
+#r2:checked ~ .hightlight ~ .line ~ .slides {
+    margin-left: -100%;
+    transition: 0.3s ease;
+}
+.slides .slide-1 {
+    display: flex;
+    flex-direction: column;
+}
+.slide-1 .ten-tai-khoan, .slide-1 .loai-tai-khoan {
+    width: 1000px;
+    height: 65px;
+    display: flex;
+}
+.slide-1 .ten-tai-khoan {
+    margin-top: 15px;
+}
+.ten-tai-khoan i, .loai-tai-khoan i {
+    margin: 15px;
+    font-size: 25px;
+}
+.ten-tai-khoan i, .loai-tai-khoan i{
+    color: #7f8c8d;
+}
+
+.slides .slide-2 {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    width: 366px;
+    height: 284px;
+    margin-top: 15px;
+    margin-left: 25px;
+    box-shadow: 0 2px 2px #95a5a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .box {
+    width: 318px;
+    height: 65px;
+    position: relative;
+  }
+  .form .box-mk-cu {
+    margin-top: 15px;
+  }
+  .input {
+    position: absolute;
+    width: 318px;
+    height: 30px;
+    bottom: 0;
+    border: none;
+    border-bottom: 1px solid #7f8c8d;
+    background: none;
+    outline: none;
+    font-size: 18px;
+  }
+  .box label {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #95a5a6;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  input[type="password"]:focus {
+    border-bottom: 1px solid #2980b9;
+    transition: 0.3s ease;
+  }
+  input[type="password"]:focus ~ label,
+  input[type="password"]:valid ~ label {
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #2980b9;
+    transition: 0.3s ease;
+  }
+  input[name="cap-nhat"] {
+    width: 85px;
+    height: 40px;
+    margin-left: 233px;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    font-size: 22px;
+    color: #27ae60;
+    outline: none;
+  }
+  input[name="cap-nhat"]:hover {
+    background-color: #dfe6e9;
+    transition: 0.3s ease;
+  }

@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1243px;
+  height: 663px;
+  font-family: sans-serif;
+  display: flex;
+}
+.header {
+  width: 260px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.logo {
+  width: 260px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.list {
+  width: 260px;
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  width: 260px;
+  font-size: 17px;
+  margin: 18px 0;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.list-item-content {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+.list-item-content:hover {
+  color: #2c3e50;
+  transition: 0.2s ease;
+}
+.list-item .selected {
+  text-decoration: none;
+  color: red;
+}
+.icon {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.container {
+  width: 1000px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+}
+.container .container-name {
+  width: 1000px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.container-name .back {
+  text-decoration: none;
+  color: #95a5a6;
+  font-size: 25px;
+  margin: 0 20px;
+}
+.container-name .btn-them-moi {
+  text-decoration: none;
+  color: #009688;
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-them-moi .font-size-them-moi {
+  font-size: 25px;
+}
+.container .container-content {
+  width: 1000px;
+  height: 598px;
+  display: flex;
+}
+.container-name div .back {
+  text-decoration: none;
+  color: #7f8c8d;
+  border-radius: 20px;
+}
+.container-content .box-form {
+  width: 350px;
+  height: 598px;
+}
+.container-content .box-form {
+  width: 350px;
+  height: 598px;
+}
+.box-form .form {
+  width: 350px;
+  height: 598px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .header-form {
+  width: 350px;
+  height: 62px;
+  border-bottom: 1px solid #bdc3c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .header-form .name-form {
+  font-size: 15px;
+  margin-left: 20px;
+}
+.form .header-form .btn-luu {
+  width: 70px;
+  height: 36px;
+  font-size: 18px;
+  color: #27ae60;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  outline: none;
+}
+.form .header-form .btn-luu:hover {
+  background-color: #ecf0f1;
+  transition: 0.3s ease;
+}
+.form .body-form {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  width: 300px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #7f8c8d;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+.label-ten-phong, .label-loai-phong, .label-cach-tinh-tien, .label-mo-ta {
+  height: 20px;
+  margin-top: 6px;
+}
+.form-group .input-ten-phong, .form-group #list-loai-phong, .form-group #list-cach-tinh-tien, .form-group .input-mo-ta {
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.input-ten-phong {
+  width: 218px;
+}
+.input-mo-ta {
+  width: 254px;
+}
+#list-loai-phong {
+  width: 215px;
+}
+#list-cach-tinh-tien {
+  width: 194px;
+}
+.form-group span {
+  height: 20px;
+  margin-top: 6px;
+}
+.form .thong-bao {
+  margin-right: 140px;
+  color: red;
+}

@@ -1,0 +1,23 @@
+                              HÓA ĐƠN                                 
+Họ tên khách hàng: dsa                                   
+Quê quán: dsa                                                    
+Số điện thoại: 123                                             
+Mã hóa đơn: 32                                         Ngày: 12/05/2021
+--------- Tiền phòng---------                                         
+STT   Phòng  Số ngày   Ngày nhận phòng  Ngày trả phòng   Thành tiền   
+ 1    P.102     1        12/05/2021       12/05/2021       250000 <br>     
+                                             Tổng tiền:    250000 <br>     
+--------- Tiền dịch vụ-------                                         
+STT         Tên menu           Số lượng    Đơn giá      Thành tiền    
+ 1           Caffe                1         12000         12000       
+ 2           Nước khoáng                1         15000         15000       
+ 3           Nước chanh                1         23000         23000       
+                                             Tổng tiền:   50000       
+--------- Tổng thanh toán----                                         
+                                             Tổng tiền:   300000      
+                                             Trả trước:   100000      
+                                       Tổng thanh toán:   200000      
+                                             Khách trả:   200000      
+                  Cảm ơn quý khách và hẹn gặp lại                     
+
+       Khách hàng                                    Nhân viên        

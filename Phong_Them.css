@@ -1,0 +1,83 @@
+.container-content .box-form {
+  width: 350px;
+  height: 598px;
+}
+.box-form .form {
+  width: 350px;
+  height: 598px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .header-form {
+  width: 350px;
+  height: 62px;
+  border-bottom: 1px solid #bdc3c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .header-form .name-form {
+  font-size: 15px;
+  margin-left: 20px;
+}
+.form .header-form .btn-luu {
+  width: 70px;
+  height: 36px;
+  font-size: 18px;
+  color: #27ae60;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  outline: none;
+}
+.form .header-form .btn-luu:hover {
+  background-color: #ecf0f1;
+  transition: 0.3s ease;
+}
+.form .body-form {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  width: 300px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #7f8c8d;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+.label-ten-phong, .label-loai-phong, .label-cach-tinh-tien, .label-mo-ta {
+  height: 20px;
+  margin-top: 6px;
+}
+.form-group .input-ten-phong, .form-group #list-loai-phong, .form-group #list-cach-tinh-tien, .form-group .input-mo-ta {
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.input-ten-phong {
+  width: 218px;
+}
+.input-mo-ta {
+  width: 254px;
+}
+#list-loai-phong {
+  width: 215px;
+}
+#list-cach-tinh-tien {
+  width: 194px;
+}
+.form-group span {
+  height: 20px;
+  margin-top: 6px;
+}
+.form .thong-bao {
+  margin-right: 140px;
+  color: red;
+}
